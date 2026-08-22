@@ -8,7 +8,7 @@ An interactive algorithm visualizer built with **React**, **Vite**, and **Tailwi
 - **Pathfinding Grid:** Interactive 2D matrix with wall drawing, supporting BFS, DFS, Dijkstra, and A* Search.
 - **C++ Code Tracker:** Highlights corresponding code lines in real-time as algorithms execute.
 - **Custom Inputs:** Load custom numeric arrays for sorting.
-- **Step-by-Step Execution:** Play, Pause, Step Forward/Backward, and adjustable animation speed.
+- **Step-by-Step Execution:** Play, Pause, Step Forward/Backward, Restart, and adjustable animation speed.
 - **Performance Metrics:** Real-time tracking of comparisons, swaps/writes, and time/space complexity analysis.
 
 ## 🛠️ Tech Stack
