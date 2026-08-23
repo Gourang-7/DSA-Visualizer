@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { ChevronDown, Sparkles, MapPin, BarChart3, Eraser, CheckCircle2 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 // Common Components
 import ControlBar from './components/ControlBar';
@@ -405,6 +406,7 @@ useEffect(() => {
           <span>GitHub</span>
         </a>
       </footer>
+      <Analytics />
     </main>
   );
 }
