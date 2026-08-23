@@ -2,14 +2,14 @@ import { useState, useEffect, useRef } from 'react';
 import { ChevronDown, Sparkles, MapPin, BarChart3, Eraser, CheckCircle2 } from 'lucide-react';
 
 // Common Components
-import ControlBar from './components/ControlBar';
+import ControlBar from './components/ControlBar'; bubbleSort
 import CodeViewer from './components/CodeViewer';
 
 // Sorting Suite
 import ArrayVisualizer from './components/ArrayVisualizer';
 import ComplexityPanel from './components/ComplexityPanel';
 import { ALGORITHM_DATA } from './data/algorithmsData';
-import { generateBubbleSortTrace } from './algorithms/bubbleSort';
+import { generateBubblesortTrace } from './algorithms/bubblesort';
 import { generateInsertionSortTrace } from './algorithms/insertionSort';
 import { generateSelectionSortTrace } from './algorithms/selectionSort';
 import { generateQuickSortTrace } from './algorithms/quickSort';
@@ -59,13 +59,13 @@ export default function App() {
   const updateSortTrace = (newArr, algoKey) => {
     let generator;
     switch (algoKey) {
-      case 'bubble': generator = generateBubbleSortTrace; break;
+      case 'bubble': generator = generateBubblesortTrace; break;
       case 'insertion': generator = generateInsertionSortTrace; break;
       case 'selection': generator = generateSelectionSortTrace; break;
       case 'quick': generator = generateQuickSortTrace; break;
       case 'merge': generator = generateMergeSortTrace; break;
       case 'heap': generator = generateHeapSortTrace; break;
-      default: generator = generateBubbleSortTrace;
+      default: generator = generateBubblesortTrace;
     }
 
     const raw = generator(newArr);
