@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { ChevronDown, Sparkles, MapPin, BarChart3, Eraser, CheckCircle2 } from 'lucide-react';
+import { ChevronDown, Sparkles, MapPin, BarChart3, Eraser, CheckCircle2, Github } from 'lucide-react';
 
 // Common Components
 import ControlBar from './components/ControlBar';
@@ -388,6 +388,21 @@ useEffect(() => {
           />
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="w-full max-w-6xl flex items-center justify-center gap-2 pt-6 pb-2 text-xs font-mono text-slate-500 border-t border-slate-900/80">
+        <span>Made by <strong className="text-slate-300 font-medium">Gourang_7</strong></span>
+        <span>•</span>
+        <a
+          href="https://github.com/Gourang-7"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1.5 text-slate-400 hover:text-indigo-400 transition-colors"
+        >
+          <Github size={14} />
+          <span>GitHub</span>
+        </a>
+      </footer>
     </main>
   );
 }
